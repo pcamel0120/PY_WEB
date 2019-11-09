@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://pcamel.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <style>
+        body{
+            text-align:center;
+            }
+        .label{
+            color:orange;
+            font-size:20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="contect">
+    <h1>{{ object.title }}</h1>
+    <div>
+        <p><span class="label">Description:</span> {{ object.description }}</p>
+        <p><span class="label">Create Date:</span> {{ object.create_date }}</p>
+        <p><span class="label">Modify Date:</span> {{ object.modify_date }}</p>
+        <img src="{{ object.image.url }}" width="600" height="600">
+        <div id="disqus_thread"></div>
+     </div>
+</div>
+</body>
+</html>
